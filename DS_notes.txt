@@ -1,0 +1,3 @@
+In general, doing something with every item in one dimension is linear, 
+doing something with every item in two dimensions is quadratic, 
+and dividing the working area in half is logarithmic.

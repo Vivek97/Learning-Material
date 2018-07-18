@@ -1,0 +1,55 @@
+>Sample Questions for Nokia "Siemens"
+Manual testing
+1. How do you test a washing machine? Don’t tell me usual testing scenarios. Tell me some creative scenarios.
+2. How do you test uploading of picture feature? Write 15 scenarios.
+3. Can you explain how you have done Web security testing?
+4. Spiral Model
+5. Smoke n Regression testing
+6. Test case design techniques
+8. What will you do if you are asked to work late night and on weekends?
+9. What if more work is given to you than other team members?
+10. How better are you than other test engineers?
+Questions based on engineering .Since I have done my BE in E&C few basic questions were asked
+11. Do you know octal n hexa numbers?
+12. Can you write the ckt for full adder n different gates?
+2nd round:
+1. Tell me about yourself
+2. What is compatibility and regression testing
+3. Tell me about your last project
+4. How many test cases are there in your old proj
+5. How many bugs have you found
+6. Give me egs of critical bugs in your application
+7. How many modules are there in your project? Can you name some 10
+8. How many regression test cases are there
+9. Say your application is developed for eng .now clients want to release there app in Europe. So they want app to be developed in Spanish German n French. Functionality remains same
+Will you write separate test case for each Lang?
+How many times will you execute the test cases for these 3 languages?
+10. Tell me the differences in testing web and standalone app. What things we should take care
+while testing these applications.
+11. You have 6 drop down list and for each drop down list there are 8 choices. How will you test this? How many test cases should be written
+12. In your sprint you have found a critical bug but developers say that they can’t fix it. If the bug is not fixed we can’t deliver anything to clients because other features are dependent on these features. Now what will you do in this situation.
+13. Some scenario was given like in metro we have something like peak hours and non peak hours
+So discounts will be given at non peak hours
+5.00 am to 7.00 am -50%
+7.00 To 4.00 pm-no disc
+4.00 To 9.00 pm -20%
+9-12.00AM-no disc
+12.00-5.00 am-30%
+How many test cases will you write for this scenario and what values will you test
+14. 3 puzzles he asked me
+3rd round
+1. 2 puzzles he asked me.
+2. Defect life cycle
+3. Why bugs will get rejected
+4. How can you avoid from bugs getting rejected
+5. Do you know BVA.What is the rational behind it
+6. Do you remember your engineering subjects?
+He asked me to draw architecture of microcontroller
+Opamps basic question he asked
+7. Say you have 100 regression test cases n you have 4 days to execute. But you can execute only 20 per day. What will you do in this situation? You have to execute all 100.you can’t leave any
+8. Tell me abt your project
+9. Asked after few yrs would I like to continue in technical or would like to shift to non technical
+10. Exploratory testing
+11. What is severity egs of bugs for each severity
+12. Explain how agile model was implemented in your project.
+13. How much would you rate yourself as test engineer justify it.
