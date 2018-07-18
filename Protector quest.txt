@@ -1,0 +1,14 @@
+Protractor Testing
+Protractor plays an important role in the Testing of AngularJS applications and works as a Solution integrator combining powerful technologies like Selenium, Jasmine, Web driver, etc. 
+
+Ques
+1) Why Do We Need Protractor Framework.
+Sometimes it is difficult to capture the web elements in AngularJS applications using Junit or Selenium WebDriver.
+Protractor is a NodeJS program which is written in JavaScript and runs with Node to identinfy the web elements in AngularJS applications, and it also uses WebDriver to control the browser with user actions.
+
+2) what exactly is an AngularJS application?
+AngularJS applications are Web Applications which uses extended HTML's syntax to express web application components. It is mainly used for dynamic web applications. 
+
+3)Why can't we find Angular JS web elements using Normal Selenium Web driver?
+Angular JS applications have some extra HTML attributes like ng-repeater, ng-controller, ng-model.., etc. which are not included in Selenium locators.So, Protractor on the top of Selenium can handle and controls those attributes in Web Applications.
+

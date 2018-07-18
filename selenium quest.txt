@@ -1,0 +1,129 @@
+1.	WHICH ONE IS BETTER XPATH OR CSS?
+Traversing the DOM in older browsers like Internet Explorer 8 does not work with CSS but is fine with XPath. And XPath can walk up the DOM (e.g. from child to parent), whereas CSS can only traverse down the DOM (e.g. from parent to child).
+Based on the data, XPath looks more favorable than it once was.
+
+advice is to adopt a more hybrid approach -- focusing first on IDs, then CSS, and leveraging XPath only when you need it (e.g. walking up the DOM). He says he does this without hesitation because it's the right tool for the task, and that XPath will always be more powerful for advanced locators.
+EOD
+2.	HOW WILL YOUHANDLE DYNAMIC ELEMENTS?
+1>Using contains method
+2>Use of sendKeys
+eXAMPLE :
+Step 1: Enter password 
+driver.findElement(By.id(“password”)).sendKeys(“password”));
+
+Step 2: Use key functions to navigate to element.
+driver.findElement(By.id(“password”)).sendKeys(Keys.ENTER));
+or
+driver.findElement(By.id(“password”)).sendKeys(Keys.TAB));
+EOD
+3.	WHAT IS IMPLICIT WAIT IN WEBDRIVER?
+An implicit wait is to tell WebDriver to poll the DOM for a certain amount of time when trying to find an element or elements if they are not immediately available. The default setting is 0. Once set, the implicit wait is set for the life of the WebDriver object instance.
+This means that we can tell Selenium that we would like it to wait for a certain amount of time before throwing an exception that it cannot find the element on the page. We should note that implicit waits will be in place for the entire time the browser is open. This means that any search for elements on the page could take the time the implicit wait is set for.
+
+driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+
+eXPLICIT 
+It is more extendible in the means that you can set it up to wait for any condition you might like. Usually, you can use some of the prebuilt ExpectedConditions to wait for elements to become clickable, visible, invisible, etc.
+
+WebDriverWait wait = new WebDriverWait(driver, 10);
+WebElement element = wait.until(ExpectedConditions.elementToBeClickable(By.id("someid")));
+EOD
+4.	WHAT ARE THE DIFFERENT ASSERTIONS OR CHECK POINTS USED IN YOUR SCRIPT?
+Assertion not used
+check points used for validating login as after login document status should be "ALL VERSION"
+EOD
+5.	HOW TO STORE A VALUE WHICH IS TEXT BOX USIGN WEBDRIVER?
+ WebElement element = driver.findElement(By.id("userId"));
+1>using getText
+			 String text = element.getText();
+2>using javascript 
+ 	JavascriptExecutor executor = (JavascriptExecutor) driver;
+					text = (String) executor.executeScript("return arguments[0].value", element);
+3>getElementAttributeValue
+					text = element.getAttribute(attributeName);
+EOD
+6.	HOW TO SWITCH BETWEEN THE WINDOWS
+    Set<String> handle= driver.getWindowHandles();//Return a set of window handle
+	driver.switchTo().window("windowName");
+	driver.switchTo().frame("frameName");
+	Alert alert = driver.switchTo().alert();
+EOD
+7.	HOW TO HANDLE ALERTS AND CONFIRMATION BOXES
+	Alert alert = driver.switchTo().alert();
+EOD
+8.	HOW TO SWITCH BETWEEN FRAMES
+driver.switchTo().frame("frameName");
+EOD
+9.	HOW TO MOUSEHOVER ON AN ELEMENT?
+By using Action class
+Actions builder = new Actions(getDriver());
+builder.moveToElement(element).build().perform();
+EOD
+10.	WHAT IS ACTIONS CLASS IN WEBDRIVER?
+In Webdriver, handling keyboard events and mouse events (including actions such as Drag and Drop or clicking multiple elements With Control key) are done using the advanced user interactions API . It contains Actions and Action classes which are needed when performing these events.
+
+11.	HOW TO GET NUMBER OF LINKS AVAILABLE ON THE PAGE.
+12.	WHAT IS TESTNG?
+13.	DIFFERENT ANNOTATIONS IN TESTNG
+14.	WHAT IS THE DIFFERENCE BETWEEN BEOFE METHOD AND BEFORE CLASS
+15.	WHAT ARE THE DIFFERENT ATTRIBUTES FOR @TEST ANNOTATION?
+16.	CAN WE RUN GROUP OF TEST CASES USING TESTNG?
+17.	WHAT IS YOUR FRAME WORK OR EXPLAIN YOUR FRAMEWORK
+
+18.	EXPLAIN YOUR CURRENT FRAMEWORK?
+19.	WHILE EXPLAINING THE FRAMEWORK, IN-BETWEEN THEY WILL ASK FEW QUESTIONS ABOUT THE FRAMEWORK.LIKE WHY THIS FRAMEWORK?EXECUTION FLOW?
+20.	HOW TO INTEGRATE WITH TFS?
+21.	BENEFITS OF SELENIUM?
+22.	BENEFITS OF OOPS??
+23.	WHAT IS POLYMORPHISM??
+24.	WHAT IS DICTIONARY ??
+25.	HOW TO HANDLE AJAX ELEMENTS?
+26.	WHAT IS SYNCHRONISATION?
+27.	THE DIFFERENCE BETWEEN IMPLICIT WAIT AND EXPLICIT WAIT?
+28.	WHAT IS AUTOMATION LIFE CYCLE?
+29.	WHAT IS A FRAMEWORK?
+30.	WHAT IS NUNIT? EXPLAIN THE CAPABILITIES OF NUNIT?
+31.	WRITE A SCRIPT TO OPEN THE FIREFOX WITHOUT USING FIREFOXDRIVER CLASS
+ans: Runtime.getRuntime().exec("C:\\Program Files\\Mozilla Firefox\\firefox.exe"); 
+33.	HOW TO TAKE THE SCREEN SHOT OF WEB ELEMENT?
+34.	HOW TO VERIFY TO VERIFY WHETHER THE ELEMENT IS PRESENT OR NOT USING FINDELEMENTS METHOD
+35.	WRITE A SCRIPT TO VERIFY WHETHER THE CHECKBOX IS SELECTED OR NOT.
+36.	HOW TO VERIFY WHETHER THE LIST BOX IS A DROPDOWN LIST OR MULTI-SELECT LIST.
+37.	THE DIFFERENCE BETWEEN ARRAYLIST AND LINKED LIST?
+38.	EXPLAIN THE VECTOR??
+39.	THE DIFFERENCE BETWEEN ABSTRACTION AND ENCAPSULATION?
+40.	THE DIFFERENCE BETWEEN PROTECTED AND DEFAULT ACCESS SPECIFIERS?
+41.	WHAT IS SINGLETON CLASS ??
+42.	WHY POM??
+43.	HOW TO HANDLE WINDOWS POPUP??
+
+44.	WHICH ONE IS BETTER XPATH OR CSS?
+45.	HOW WILL YOUHANDLE DYNAMIC ELEMENTS?
+46.	WHAT IS IMPLICIT WAIT IN WEBDRIVER?
+47.	WHAT ARE THE DIFFERENT ASSERTIONS OR CHECK POINTS USED IN YOUR SCRIPT?
+48.	HOW TO STORE A VALUE WHICH IS TEXT BOX USIGN WEBDRIVER?
+49.	HOW TO SWITCH BETWEEN THE WINDOWS
+50.	HOW TO HANDLE ALERTS AND CONFIRMATION BOXES
+51.	HOW TO SWITCH BETWEEN FRAMES
+52.	HOW TO MOUSEHOVER ON EN ELEMENT?
+53.	WHAT IS ACTIONS CLASS IN WEBDRIVER?
+54.	HOW TO GET NUMBER OF LINKS AVAILABLE ON THE PAGE.
+55.	WHAT IS TESTNG?
+56.	DIFFERENT ANNOTATIONS IN TESTNG
+57.	WHAT IS THE DIFFERENCE BETWEEN BEOFE METHOD AND BEFORE CLASS
+58.	WHAT ARE THE DIFFERENT ATTRIBUTES FOR @TEST ANNOTATION?
+59.	CAN WE RUN GROUP OF TEST CASES USING TESTNG?
+60.	WHAT IS YOUR FRAME WORK OR EXPLAIN YOUR FRAMEWORK
+
+Parameterization :
+The concept which we achieve by parameterization is called Data Driven Testing.
+
+We always get confuse when it comes to using Wait commands, to better understand it we need to remember that there is a difference between several scenarios:
+
+An element not being present at all in the DOM.
+
+An element being present in the DOM but not visible.
+
+An element being present in the DOM but not enabled. (i.e. clickable)
+
+There are pages which get displayed with the JavaScript, the elements are already present in the browser DOM, but are not visible. The implicit wait only waits for an element to appear in the DOM, so it returns immediately, but when you try to interact with the element you get a NoSuchElementException. You could test this hypothesis by writing a helper method that explicit wait for an element to be visible or clickable.

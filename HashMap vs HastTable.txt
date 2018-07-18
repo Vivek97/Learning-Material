@@ -1,0 +1,42 @@
+
+Differences between HashMap and Hashtable?
+
+This question is often asked in interview to check whether candidate understands correct usage of collection classes and is aware of alternative solutions available.
+
+The HashMap class is roughly equivalent to Hashtable, except that it is non synchronized and permits nulls. (HashMap allows null values as key and value whereas Hashtable doesn't allow nulls).
+HashMap does not guarantee that the order of the map will remain constant over time.
+HashMap is non synchronized whereas Hashtable is synchronized.
+Iterator in the HashMap is fail-safe while the enumerator for the Hashtable is not and throw ConcurrentModificationException if any other Thread modifies the map structurally by adding or removing any element except Iterator's own remove() method. But this is not a guaranteed behavior and will be done by JVM on best effort.
+
+HashMap
+
+1) HashMap is non synchronized. It is not-thread safe and can't be shared between many threads without proper synchronization code.
+2) HashMap allows one null key and multiple null values.
+3) HashMap is a new class introduced in JDK 1.2.
+4) HashMap is fast.
+5) We can make the HashMap as synchronized by calling this code
+Map m = Collections.synchronizedMap(HashMap);
+6) HashMap is traversed by Iterator.
+7) Iterator in HashMap is fail-fast.
+8) HashMap inherits AbstractMap class.
+
+Hashtable
+
+1) Hashtable is synchronized. It is thread-safe and can be shared with many threads.
+2) Hashtable doesn't allow any null key or value.
+3) Hashtable is a legacy class.
+4) Hashtable is slow.
+5) Hashtable is internally synchronized and can't be unsynchronized.
+6) Hashtable is traversed by Enumerator and Iterator.
+7) Enumerator in Hashtable is not fail-fast.
+8) Hashtable inherits Dictionary class.
+
+Most common Exceptions:
+
+1) NoSuchElementException : FindBy method can’t find the element.
+2) StaleElementReferenceException : This tells that element is no longer appearing on the DOM page.
+3) TimeoutException: This tells that the execution is failed because the command did not complete in enough time.
+4) ElementNotVisibleException: Thrown to indicate that although an element is present on the DOM, it is not visible, and so is not able to be interacted with
+5) ElementNotSelectableException: Thrown to indicate that may be the element is disabled, and so is not able to select.
+You can access the complete list of exception here, but if you are a beginner that I would suggest you to move forward as of now. It can be  over dose.
+

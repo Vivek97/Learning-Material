@@ -1,0 +1,17 @@
+https://seleniumbyneeds.wordpress.com/2015/02/16/find-broken-images-in-web-page/
+
+http://seleniumbyneeds.blogspot.in/2015/01/using-actions-to-hover-on-menu.html
+
+http://www.softwaretestingstudio.com/double-click-event-selenium-webdriver/
+
+http://www.softwaretestingstudio.com/how-to-do-regression-testing-best-practices/
+
+http://qatechhub.com/enhanced-pom-design-pattern-page-factory/
+
+http://www.softwaretestinghelp.com/efficient-selenium-scripting-selenium-tutorial-27/
+
+http://www.ufthelp.com/2014/11/working-with-action-class-in-selenium.html
+
+
+
+

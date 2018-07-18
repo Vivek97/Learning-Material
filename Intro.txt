@@ -1,0 +1,126 @@
+All About Automation Frameworks
+A free session by ITeLearn.com
+
+
+0. What is Test automation. Why do we require frameworks
+1. Various Automation Frameworks
+2. Best practices to build
+3. How to choose the right framework for your project
+4. Typical challenges and how to resolve them.
+
+Manual Testing to Automation
+
+Record vs Custom Code
+1. Gives us more control on what has to be done.
+2. Add logic, add conditions, add loops
+3. Optimize the code and make it more faster 
+4. Take the basic code to a very advanced
+
+Efficiency | Reusability | Accuracy
+
+Custom Code to a Framework
+
+What is a framework?
+- Structure
+- Standards
+- Proven 
+- Robust
+- Easy to implement, change or maintain over a regular code
+- Customized
+Human Skeleton : 
+Bird skeleton :
+
+***Linear Framework
+User Login
+- LoginLink.Click
+- UserNameField.EnterText."karthik"
+- PswdField.EnterText."karthik"
+- RememberPswd.Click
+- LoginButton.Click
+- Confirm Login
+
+Send Email
+- LoginLink.Click
+- UserNameField.EnterText."karthik"
+- PswdField.EnterText."karthik"
+- RememberPswd.Click
+- LoginButton.Click
+- Confirm Login
+- Click compose
+- type msg,
+- type subj
+- send
+- confirm send
+- logout
+
+1000, 5000, 10000.
+DisAdvantages For Linear
+1. Changes require lot of time ... efficiency lost.
+2. With many changes, errors are prone to happen. - Accuracy is also lost
+
+***Functional Decomposition Framework
+
+UL -----
+Function userLogin(uName, uPswd){
+- LoginLink.Click
+- UserNameField.EnterText."karthik"
+- PswdField.EnterText."karthik"
+- RememberPswd.Click
+- LoginButton.Click
+- Confirm Login
+}
+SE -------
+UL -----
+Attac ----
+AddContact---- 
+
+
+NEW TC - Send with attachment
+UL
+SendEmail
+Attach
+UL
+
+Adv:
+1. Changes require lesser effort. Efficiency
+2. Reuse this over and over.
+3. Accuracy improved
+
+DisAdv:
+1. The data is hardcoded. Data is inside the code ...
+2. Each time we need to change the data then, we have to go and change in the code
+3. QA Team - 20% automation engineers, 80% manual engineers
+4. We want the non-techy/manual engineers also to use this framework
+
+**** Data Driven Framework
+
+Adv:
+1. Repeat the same TC for varied sets of Test Data
+2. Much more faster - Efficiency
+3. Sharing load with the ME
+
+DisAdva:
+1. Changes to TC requires code change
+2. To add new TC, we have to do a code change
+
+**** Keywordd Driven Framework
+- Divides all test steps by using reusable keyword functions
+- stores externally
+
+Adv:
+1. Changes to TC requires no code change
+2. To add new TC requires no code change
+
+DisAdv:
+1. Webpages change and element identification becomes an issue
+2. Dynamism in the web objects
+
+*** Page Object/Factory Framework
+Element identifications are taken and put in a new location that
+can reused..
+
+Quality testing is an integral part of any manufacturing process and it is very important in software development. At a time, when testing automation has replaced the manual testing processes, there is a huge demand for professionals in testing automation. 
+
+ITeLearn, committed to skill development in software Testing sector comes out with a free orientation session on Automation Frameworks. This session will discuss in detail with different automation frameworks, advantages, disadvantages and career opportunities.
+
+Another unique training video from the master trainer Karthik.

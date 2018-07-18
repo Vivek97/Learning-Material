@@ -1,0 +1,46 @@
+1. Author LOB - (corp_erim_erimprm_auth) - prmtestauth1 
+2. PRO TEAM -  (erim_approvers) - prmtestauth7
+3. ERIM Cordinator - (corp_erim_erimprm_cord) - prmtestauth2
+4. MAIL ROOM - (corp_erim_erimprm_mail) - prmtestmailroom1
+
+10. Get domain name using java script executor
+JavascriptExecutor javascript = (JavascriptExecutor) driver;
+String CurrentURLUsingJS=(String)javascript.executeScript("return document.domain");
+Above syntax will retrieve your software application's domain name using webdriver's java script executor interface and store it in to variable. VIEW GET DOMAIN NAME PRACTICAL 
+
+isMultiple()
+Select listbox = new Select(driver.findElement(By.xpath("//select[@name='FromLB']")));
+boolean value = listbox.isMultiple();
+It will return true if select box is multiselect else it will return false.VIEW PRACTICAL EXAMPLE OF isMultiple()
+
+Navigate to URL or Back or Forward in Selenium Webdriver
+driver.navigate().to("http://only-testing-blog.blogspot.com/2014/01/textbox.html");
+driver.navigate().back();
+driver.navigate().forward();
+
+Verify Element Present in Selenium WebDriver
+Boolean iselementpresent = driver.findElements(By.xpath("//input[@id='text2']")).size()!= 0;
+It will return true if element is present on page, else it will return false in variable iselementpresent. VIEW PRACTICAL EXAMPLE OF VERIFY ELEMENT PRESENT.
+
+Capturing entire page screenshot in Selenium WebDriver
+File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+FileUtils.copyFile(screenshot, new File("D:\\screenshot.jpg"));
+It will capture page screenshot and store it in your D: drive. VIEW PRACTICAL EXAMPLE ON THIS PAGE.
+
+Get current URL of page and domain name in selenium webdriver
+If my current page URL = http://only-testing-blog.blogspot.in/2013/11/new-test.html Then
+My domain name is = only-testing-blog.blogspot.in
+JavascriptExecutor javascript = (JavascriptExecutor) driver;
+  String DomainUsingJS=(String)javascript.executeScript("return document.domain");  
+  System.out.println("My Current URL Is  : "+DomainUsingJS);
+  
+   In java programming, multiple and hybrid inheritance is supported through interface only. 
+   
+   When use Aggregation?
+
+Code reuse is also best achieved by aggregation when there is no is-a relationship.
+Inheritance should be used only if the relationship is-a is maintained throughout the lifetime of the objects involved; otherwise, aggregation is the best choice.
+
+  
+  
+  
