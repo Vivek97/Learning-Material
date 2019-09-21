@@ -1,0 +1,13 @@
+GIT status: To know the comparison between the working directories and index.
+GIT diff: to know the changes between the commits and the working tree.
+GIT stash applies: to get the saved changes on the working directory.
+GIT log: to know specific commit from the history of commits.
+GIT add: It adds file changes in an existing directory to index.
+GIT rm: It removes a file from the staging area.
+GIT init: creating a new repository.
+GIT clone: to copy or check out the working repository.
+GIT commit: committing the changes.
+GIT PUSH: sending the changes to the master branch.
+GIT pull: fetch the code already in the repository.
+GIT merge: merge the changes on the remote server to the working directory.
+Git reset: to reset or drop all the changes and commits.
